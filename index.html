@@ -7,9 +7,14 @@
     <meta name="description" content="Raphael Laurentino"/>
 
     <title>Top Casa Fina</title>
+    <!-- [CSS Bootstrap Only] -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- [CSS Bootstrap MDB] -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet"/>
     <!-- [Importação do Bootstrap Baixado] -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <!-- [Fonte Incrível] -->
+    <!-- [Fonte Incrível kk] -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <!-- [Fontes do Google] -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
@@ -20,7 +25,57 @@
 
 <body>
 
-<section class="container">
+<!-- [Navbar] -->
+<section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="https://mdbgo.com/">
+                <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+                     height="16" alt="MDB Logo" loading="lazy" style="margin-top: -1px;"/>
+            </a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit"
+                       role="button"><i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<section>
+    <ul>
+        <li><a href="#sobre-nos">Sobre Nós</a></li>
+        <li><a href="#nossos-projetos">Nossos Projetos</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#video">Modelos de Arquitetura</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</section>
+
+<!--[Sobre nós]-->
+<section class="container" id="sobre-nos">
     <h2>Sobre Nós</h2>
     <img class="img-responsive" src="img/empresa.jpg" alt="">
 
@@ -73,7 +128,8 @@
     </div>
 </div>
 
-<section class="container">
+<!--[Os nossos projetos]-->
+<section class="container" id="nossos-projetos">
     <h2>Nossos Projetos</h2>
 
     <figure class="thumbnail">
@@ -117,7 +173,8 @@
     </figure>
 </section>
 
-<section>
+<!--[Depoimentos]-->
+<section id="depoimentos">
     <h2 class="container titulo-depoimentos">Depoimentos de Clientes</h2>
 
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -167,7 +224,8 @@
     </div>
 </section>
 
-<section class="container">
+<!--[Video - Modelos de arquitetura]-->
+<section class="container" id="video">
     <h2>Modelos de Arquitetura</h2>
     <div class="embed-responsive embed-responsive-16by9">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/agId5Wn6qvs" title="YouTube video player"
@@ -177,7 +235,8 @@
     </div>
 </section>
 
-<section class="container">
+<!--[Contato]-->
+<section class="container" id="contato">
     <h2>Contato</h2>
     <p>Entre em contato conosco</p>
 
