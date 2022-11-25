@@ -27,7 +27,7 @@
 
 <!-- [Navbar - Header] -->
 <header>
-    <nav class="navbar navbar-expand-lg" style="background-color: #6d8f8a;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #8eb2ef;">
         <!-- [Container que envolve] -->
         <div class="container-fluid">
 
@@ -78,9 +78,15 @@
         </div>
     </nav>
 
-    <div>
-        <h1>TopCasaFina Arquitetura</h1>
-        <P>Projetando a casa dos sonhos desde 2000 A.C</P>
+    <div class="container topCasaDina-bannerWrapper">
+        <div class="topCasaFiba-banner">
+            <h1>TopCasaFina Arquitetura</h1>
+            <P>Projetando a casa dos sonhos desde 2000 A.C</P>
+
+            <button type="button" class="btn btn-outline-primary btn-lg">Contate-nos agora</button>
+            <br>
+            <a class="btn btn-outline-light btn-lg" href="#!" role="button">Contate-nos agora</a>
+        </div>
     </div>
 
 </header>
@@ -88,44 +94,47 @@
 <!--[Sobre nós]-->
 <section class="container" id="sobre-nos">
     <h2>Sobre Nós</h2>
-    <img class="img-responsive" src="img/empresa.jpg" alt="">
 
-    <div class="panel-group" id="paineis-sobre">
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo"
-                 data-parent="#paineis-sobre">
-                <h3 class="panel-title">Desde 1935</h3>
-            </div>
+    <div class="row">
+        <img class="img-responsive col-sm-6" src="img/empresa.jpg" alt="">
 
-            <div class="collapse in" id="primeiro-paragrafo">
-                <div class="panel-body">
-                    Desde 1935 trazendo casas, mansões e prédios lindos para o mundo
+        <div class="panel-group col-sm-6" id="paineis-sobre">
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo"
+                     data-parent="#paineis-sobre">
+                    <h3 class="panel-title">Desde 1935</h3>
+                </div>
+
+                <div class="collapse in" id="primeiro-paragrafo">
+                    <div class="panel-body">
+                        Desde 1935 trazendo casas, mansões e prédios lindos para o mundo
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo"
-                 data-parent="#paineis-sobre">
-                <h3 class="panel-title">Preços acessíveis</h3>
-            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo"
+                     data-parent="#paineis-sobre">
+                    <h3 class="panel-title">Preços acessíveis</h3>
+                </div>
 
-            <div id="segundo-paragrafo" class="collapse">
-                <div class="panel-body">
-                    Alegria para colaborar com um mundo mais bonito
+                <div id="segundo-paragrafo" class="collapse">
+                    <div class="panel-body">
+                        Alegria para colaborar com um mundo mais bonito
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo"
-                 data-parent="#paineis-sobre">
-                <h3 class="panel-title">Alegria em colaborar para um mundo mais bonito</h3>
-            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo"
+                     data-parent="#paineis-sobre">
+                    <h3 class="panel-title">Alegria em colaborar para um mundo mais bonito</h3>
+                </div>
 
-            <div id="terceiro-paragrafo" class="collapse">
-                <div class="panel-body">
-                    Trazendo alegria para a vida das pessoas que tem dinheiro para gastar.
+                <div id="terceiro-paragrafo" class="collapse">
+                    <div class="panel-body">
+                        Trazendo alegria para a vida das pessoas que tem dinheiro para gastar.
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,45 +152,119 @@
 <section class="container" id="nossos-projetos">
     <h2>Nossos Projetos</h2>
 
-    <figure class="thumbnail">
-        <img src="img/projetos/casa-castelo.png" alt="Foto da Casa Castelo">
-        <figcaption class="caption">
-            <h3>Casa Castelo</h3>
-            <p>A Casa Castelo é o último lançamento da TopCasaDina Arquitetura, feita para um monge.</p>
-        </figcaption>
-    </figure>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <figure class="thumbnail">
+                <img src="img/projetos/casa-castelo.png" alt="Foto da Casa Castelo">
+                <figcaption class="caption">
+                    <h3 class="card-title">Casa Castelo</h3>
+                    <p class="card-text">A Casa Castelo é o último lançamento da TopCasaDina Arquitetura, feita para um
+                        monge.</p>
+                </figcaption>
+            </figure>
+        </div>
 
-    <figure class="thumbnail">
-        <img src="img/projetos/casa-lago.png" alt="Foto da Casa Lago">
-        <figcaption class="caption">
-            <h3>Casa Lago</h3>
-            <p>A Casa do Lago foi lar de inúmeras pessoas que conheciam o presidente da época.</p>
-        </figcaption>
-    </figure>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <figure class="thumbnail">
+                <img src="img/projetos/casa-lago.png" alt="Foto da Casa Lago">
+                <figcaption class="caption">
+                    <h3 class="card-title">Casa Lago</h3>
+                    <p class="card-text">A Casa do Lago foi lar de inúmeras pessoas que conheciam o presidente da
+                        época.</p>
+                </figcaption>
+            </figure>
+        </div>
 
-    <figure class="thumbnail">
-        <img src="img/projetos/mercado-marapira.png" alt="Foto do Mercado Marapira">
-        <figcaption class="caption">
-            <h3>Mercado Marapira</h3>
-            <p>O mercacado Marapia foi projeto nos mínimos detalhes na arquitetura baseada em frutas.</p>
-        </figcaption>
-    </figure>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <figure class="thumbnail">
+                <img src="img/projetos/mercado-marapira.png" alt="Foto do Mercado Marapira">
+                <figcaption class="caption">
+                    <h3 class="card-title">Mercado Marapira</h3>
+                    <p class="card-text">O mercacado Marapia foi projeto nos mínimos detalhes na arquitetura baseada em
+                        frutas.</p>
+                </figcaption>
+            </figure>
+        </div>
 
-    <figure class="thumbnail">
-        <img src="img/projetos/palacio-dionisio.png" alt="Foto do Palácio Dionisio">
-        <figcaption class="caption">
-            <h3>Palácio Dionísio</h3>
-            <p>O palácio Dionísio foi eleita pela revista 'Grandes palácio' como o palácio mais lindo do mundo.</p>
-        </figcaption>
-    </figure>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <figure class="thumbnail">
+                <img src="img/projetos/palacio-dionisio.png" alt="Foto do Palácio Dionisio">
+                <figcaption class="caption">
+                    <h3 class="card-title">Palácio Dionísio</h3>
+                    <p class="card-text">O palácio Dionísio foi eleita pela revista 'O grande palácio' como o palácio
+                        mais lindo do
+                        mundo.</p>
+                </figcaption>
+            </figure>
+        </div>
 
-    <figure class="thumbnail">
-        <img src="img/projetos/residencia-ludi.png" alt="Foto da Residência Ludi">
-        <figcaption class="caption">
-            <h3>Residência Ludi</h3>
-            <p>A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela revista Housing.</p>
-        </figcaption>
-    </figure>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <figure class="thumbnail">
+                <img src="img/projetos/residencia-ludi.png" alt="Foto da Residência Ludi">
+                <figcaption class="caption">
+                    <h3 class="card-title">Residência Ludi</h3>
+                    <p class="card-text">A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela
+                        revista Housing.</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <figure class="thumbnail">
+                <img src="img/projetos/casa-sustentavel.png" class="card-img-top" alt="Foto de Arquitetura Sustentavel">
+                <figcaption class="caption">
+                    <h3 class="card-title">Casa Sustentavel</h3>
+                    <p class="card-text">A arquitetura sustentável começa na preservação do meio
+                        ambiente e avança para o bem-estar.</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <figure class="thumbnail">
+                <img src="img/projetos/casa-espiral.png" class="card-img-top" alt="Foto de uma Casa Espiral">
+                <figcaption class="caption">
+                    <h3 class="card-title">Casa Espiral</h3>
+                    <p class="card-text">Uma tendência de novos modelos de casa no formato espiral com modernidade.</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <figure class="thumbnail">
+                <img src="img/projetos/casa-moderna.png" class="card-img-top" alt="Foto de uma Casa Moderna">
+                <figcaption class="caption">
+                    <h3 class="card-title">Casa Moderna</h3>
+                    <p class="card-text">Fachada moderna, sacada mediana, parede de vidro e luz de jardim, tudo da nova
+                        mordenidade.</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="card" aria-hidden="true">
+            <img src="" class="card-img-top" alt="">
+            <div class="card-body">
+                <h2> Em Breve Novidades!</h2>
+                <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                </h5>
+                <p class="card-text placeholder-glow">
+                    <span class="placeholder col-7 bg-secondary"></span>
+                    <span class="placeholder col-4 bg-success"></span>
+                    <span class="placeholder col-4 bg-warning"></span>
+                    <span class="placeholder col-6 bg-danger"></span>
+                    <span class="placeholder col-8 bg-info"></span>
+                </p>
+                <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
 </section>
 
 <!--[Depoimentos]-->
@@ -236,104 +319,123 @@
 </section>
 
 <!--[Video - Modelos de arquitetura]-->
-<section class="container" id="video">
-    <h2>Modelos de Arquitetura</h2>
-    <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/agId5Wn6qvs" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-    </div>
-</section>
-
-<!--[Contato]-->
-<section class="container" id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato conosco</p>
-
-    <form>
-        <div class="form-group">
-            <lebel for="contato-nome">Nome</lebel>
-            <imput class="form-control" id="contato-nome" type="text" placeholder="Seu nome">
-        </div>
-
-        <div class="form-group">
-            <lebel for="contato-email">Nome</lebel>
-            <div class="input-group">
-                <div class="input-group-addon">@</div>
-                <imput class="form-control" id="contato-email" type="email" placeholder="seu e-mail">
+<div class="container">
+    <div class="row">
+        <section class="col-sm-6" id="video">
+            <h2>Modelos de Arquitetura</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/agId5Wn6qvs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
             </div>
-        </div>
+        </section>
 
-        <div class="grupo-radio">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="tipo-pessoa" value="option" id="optionsRadios1"
-                       checked>
-                <label class="form-check-label" for="optionsRadios1">
-                    Pessoa Física
-                </label>
-            </div>
+        <!--[Contato]-->
+        <section class="col-sm-6" id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco</p>
 
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="tipo-pessoa" value="option" id="optionsRadios2">
-                <label class="form-check-label" for="optionsRadios2">
-                    Pessoa Jurídica
-                </label>
-            </div>
-        </div><!--
+            <form>
 
---> <select class="contato-select form-select" aria-label="Default select example">
-        <option disabled selected>Tipo de Situação</option>
-        <option value="1">Casa</option>
-        <option value="2">Apartamento</option>
-        <option value="3">Mansão</option>
-    </select>
-
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-
-    </form>
-</section>
-
-<section class="">
-    <!-- [Footer] -->
-    <footer class="bg-secondary text-white">
-
-        <div class="container p-4">
-
-            <div class="row">
-
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-
-                    <address>
-                        <strong>TopCasaFina Arquitetura</strong><br>
-                        Rua Vergueiro, 3185 Vila Mariana<br>
-                        São Paulo-SP<br>
-                    </address>
-                    <abbr>Tel: (11) 5571-2751 ou 5083-3884</abbr>
-                    <address>
-                        Email: contato.topcasafina@topcasafina.com.br
-                    </address>
-
+                <div class="col-md-6">
+                    <div class="form-outline mb-4">
+                        <input type="text" name="contato" id="contato-nome" placeholder="Digite o seu nome completo"
+                               class="form-control bg-light"/>
+                        <label class="form-label" for="contato-nome">Nome</label>
+                    </div>
                 </div>
 
+                <div class="col-md-6">
+                    <div class="form-outline mb-4">
+                        <input type="email" name="email" id="contato-email" placeholder="Coloque o seu melhor e-mail"
+                               class="form-control bg-light" data-min-length="2" data-email-validate
+                               onfocusout="verificarCampo('email')"
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+                        <label class="form-label" for="contato-email">Email</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="grupo-radio">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipo-pessoa" value="option"
+                                       id="optionsRadios1"
+                                       checked>
+                                <label class="form-check-label" for="optionsRadios1">
+                                    Pessoa Física
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipo-pessoa" value="option"
+                                       id="optionsRadios2">
+                                <label class="form-check-label" for="optionsRadios2">
+                                    Pessoa Jurídica
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label for="situacao" class="form-outline"></label>
+                            <select type="text" class="form-control bg-light" name="nome" id="situacao">
+                                <option disabled selected>Tipo de Situação</option>
+                                <option value="1">Casa</option>
+                                <option value="2">Apartamento</option>
+                                <option value="3">Mansão</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-grid gap-2 col-6 mx-auto col-md-12">
+                        <button type="submit" class="btn btn-primary btn-rounded" name="btnEnviar" id="btnEnviar">Enviar
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+    </div>
+</div>
+
+<!-- [Footer] -->
+<footer class="bg-secondary text-white">
+
+    <div class="container p-4">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
+                <address>
+                    <strong>TopCasaFina Arquitetura</strong><br>
+                    Rua Vergueiro, 3185 Vila Mariana<br>
+                    São Paulo-SP<br>
+                </address>
+                <abbr>Tel: (11) 5571-2751 ou 5083-3884</abbr>
+                <address>
+                    Email: contato.topcasafina@topcasafina.com.br
+                </address>
+
             </div>
+
         </div>
+    </div>
 
-        <!-- [Copyright] -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2020 Copyright:
-            <a class="text-white" href="https://github.com/RaphaelTW">topCasaFina.com.br</a>
-        </div>
-    </footer>
+    <!-- [Copyright] -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://github.com/RaphaelTW">topCasaFina.com.br</a>
+    </div>
+</footer>
 
-</section>
-
-<!-- [Script MDB] -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
 <!-- [Script JQuery] -->
-<script src="jquery.js"></script>
+<script src="bootstrap/js/jquery.js"></script>
 <!-- [Script Bootstrap Baixado] -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- [Script Popperjs] -->
@@ -348,6 +450,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+<!-- [Script Navbar Animation] -->
+<script src="bootstrap/js/navbar-animation-fix.js"></script>
+<!-- [Script MDB] -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+
 </body>
 
 </html>
