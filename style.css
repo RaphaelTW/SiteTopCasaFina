@@ -4,7 +4,11 @@
 
 html, body {
     height: 100%;
-    background-color: #ececec;
+    background-color: #e2ecfd;
+}
+
+.tituloEmpresa:hover {
+    color: #0020ff;
 }
 
 header {
@@ -17,6 +21,16 @@ header {
 
 header h1 {
     margin-top: 0;
+}
+
+.nav-link:hover {
+    background-color: #81abf1;
+    color: #000000 !important;
+}
+
+.nav-link:active {
+    background-color: transparent;
+    color: #032194 !important;
 }
 
 .topCasaFiba-banner {
@@ -41,6 +55,11 @@ header h1 {
     font-size: 24px;
 }
 
+.thumbnail {
+    border-radius: 1rem;
+    box-shadow: 4px 5px 15px #919090;
+}
+
 .grupo-radio, .contato-select {
     width: 50% !important;
     display: inline-block !important;
@@ -52,21 +71,10 @@ header h1 {
 }
 
 footer {
-    background-color: #363636;
+    background-color: #010131;
     color: #ffffff !important;
     padding: 20px;
     margin-top: 1rem;
-}
-
-footer address:last-child {
-    margin-bottom: 0;
-}
-
-footer {
-    background-color: #333;
-    color: #FFF;
-    padding: 20px;
-    margin-top: 10px;
 }
 
 footer address:last-child {

@@ -10,14 +10,28 @@
     <!-- [CSS Bootstrap Only] -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <!-- [CSS Bootstrap MDB] -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet"/>
-    <!-- [Importação do Bootstrap Baixado] -->
+
+    <!-- [Importação do MDBootstrap Dark Baixado] -->
+    <link rel="stylesheet" href="mdBootstrap/css/mdb.dark.min.css">
+
+    <!-- [Importação do MDBootstrap Baixado] -->
+    <link rel="stylesheet" href="mdBootstrap/css/mdb.min.css">
+
+    <!-- [Importação do Bootstrap5 Baixado] -->
+    <link rel="stylesheet" href="bootstrap5.2.3/css/bootstrap.css">
+
+    <!-- [Importação do Bootstrap3 Baixado] -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
     <!-- [Fonte Incrível kk] -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+
     <!-- [Fontes do Google] -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+
     <!-- [CSS da Página] -->
     <link rel="stylesheet" href="style.css">
 
@@ -37,7 +51,7 @@
                      height="80" alt="Logo" loading="lazy" style="margin-top: -1px;"/>
             </a>
 
-            <a class="navbar-brand" href="https://github.com/RaphaelTW">TopCasaFina Arquitetura</a>
+            <a class="navbar-brand tituloEmpresa" href="https://github.com/RaphaelTW">TopCasaFina Arquitetura</a>
 
             <div class="navbar-header">
                 <!-- [Botão Toggle] -->
@@ -96,10 +110,10 @@
     <h2>Sobre Nós</h2>
 
     <div class="row">
-        <img class="img-responsive col-sm-6" src="img/empresa.jpg" alt="">
+        <img class="img-responsive thumbnail col-sm-6" src="img/empresa.jpg" alt="">
 
         <div class="panel-group col-sm-6" id="paineis-sobre">
-            <div class="panel panel-default">
+            <div class="panel panel-default thumbnail">
                 <div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo"
                      data-parent="#paineis-sobre">
                     <h3 class="panel-title">Desde 1935</h3>
@@ -112,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="panel panel-default">
+            <div class="panel panel-default thumbnail">
                 <div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo"
                      data-parent="#paineis-sobre">
                     <h3 class="panel-title">Preços acessíveis</h3>
@@ -125,7 +139,7 @@
                 </div>
             </div>
 
-            <div class="panel panel-default">
+            <div class="panel panel-default thumbnail">
                 <div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo"
                      data-parent="#paineis-sobre">
                     <h3 class="panel-title">Alegria em colaborar para um mundo mais bonito</h3>
@@ -133,7 +147,7 @@
 
                 <div id="terceiro-paragrafo" class="collapse">
                     <div class="panel-body">
-                        Trazendo alegria para a vida das pessoas que tem dinheiro para gastar.
+                        Trazendo alegria para a vida das pessoas com dinheiro para gastar.
                     </div>
                 </div>
             </div>
@@ -241,35 +255,36 @@
             </figure>
         </div>
 
-        <div class="card" aria-hidden="true">
-            <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-                <h2> Em Breve Novidades!</h2>
-                <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                </h5>
-                <p class="card-text placeholder-glow">
-                    <span class="placeholder col-7 bg-secondary"></span>
-                    <span class="placeholder col-4 bg-success"></span>
-                    <span class="placeholder col-4 bg-warning"></span>
-                    <span class="placeholder col-6 bg-danger"></span>
-                    <span class="placeholder col-8 bg-info"></span>
-                </p>
-                <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6">
-                    <div class="spinner-border" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                </a>
+        <div class="container">
+            <div class="card thumbnail" aria-hidden="true">
+                <img src="" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h2> Em Breve Novidades!</h2>
+                    <h5 class="card-title placeholder-glow">
+                        <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                        <span class="placeholder col-7 bg-secondary"></span>
+                        <span class="placeholder col-4 bg-success"></span>
+                        <span class="placeholder col-4 bg-warning"></span>
+                        <span class="placeholder col-6 bg-danger"></span>
+                        <span class="placeholder col-8 bg-info"></span>
+                    </p>
+                    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-
 
     </div>
 </section>
 
 <!--[Depoimentos]-->
 <section id="depoimentos">
-    <h2 class="container titulo-depoimentos">Depoimentos de Clientes</h2>
+    <h2 class="titulo-depoimentos">Depoimentos de Clientes</h2>
 
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- [Indicadores] -->
@@ -321,13 +336,15 @@
 <!--[Video - Modelos de arquitetura]-->
 <div class="container">
     <div class="row">
+
         <section class="col-sm-6" id="video">
             <h2>Modelos de Arquitetura</h2>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/agId5Wn6qvs"
-                        title="YouTube video player" frameborder="0"
+            <div class="thumbnail ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/agId5Wn6qvs"
+                        title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen>
+                </iframe>
             </div>
         </section>
 
@@ -339,7 +356,7 @@
             <form>
 
                 <div class="col-md-6">
-                    <div class="form-outline mb-4">
+                    <div class="form-outline mb-4 g-3">
                         <input type="text" name="contato" id="contato-nome" placeholder="Digite o seu nome completo"
                                class="form-control bg-light"/>
                         <label class="form-label" for="contato-nome">Nome</label>
@@ -358,30 +375,28 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="grupo-radio">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tipo-pessoa" value="option"
-                                       id="optionsRadios1"
-                                       checked>
-                                <label class="form-check-label" for="optionsRadios1">
-                                    Pessoa Física
-                                </label>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo-pessoa" value="option"
+                                   id="optionsRadios1">
+                            <label class="form-check-label" for="optionsRadios1">
+                                Pessoa Física
+                            </label>
+                        </div>
 
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tipo-pessoa" value="option"
-                                       id="optionsRadios2">
-                                <label class="form-check-label" for="optionsRadios2">
-                                    Pessoa Jurídica
-                                </label>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo-pessoa" value="option"
+                                   id="optionsRadios2"
+                                   checked>
+                            <label class="form-check-label" for="optionsRadios2">
+                                Pessoa Jurídica
+                            </label>
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="mb-4">
                             <label for="situacao" class="form-outline"></label>
-                            <select type="text" class="form-control bg-light" name="nome" id="situacao">
+                            <select type="text" class="form-control" name="nome" id="situacao">
                                 <option disabled selected>Tipo de Situação</option>
                                 <option value="1">Casa</option>
                                 <option value="2">Apartamento</option>
@@ -404,7 +419,7 @@
 </div>
 
 <!-- [Footer] -->
-<footer class="bg-secondary text-white">
+<footer class="">
 
     <div class="container p-4">
 
